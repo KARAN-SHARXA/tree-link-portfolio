@@ -1,0 +1,116 @@
+/* Reset & base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Card */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my_portfolio {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #7e57c2;
+}
+
+header h1 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.bold-para {
+    font-weight: 700;
+    color: #444;
+    font-size: 0.95rem;
+    white-space: normal;
+}
+
+/* Links Section */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.links a {
+    background-color: #7e57c2;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(126, 87, 194, 0.2);
+}
+
+.links a:hover {
+    background: #5e35b1;
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+    width: 90%;
+    padding: 1rem;
+    }
+
+    .my_portfolio {
+    width: 100px;
+    height: 100px;
+    }
+
+    h1 {
+    font-size: 1.5rem;
+    }
+
+    p {
+    font-size: 0.9rem;
+    }
+
+    .social-links a {
+    padding: 10px;
+    font-size: 1rem;
+    }
+
+    footer {
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+    }
+}
